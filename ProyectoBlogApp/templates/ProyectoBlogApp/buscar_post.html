@@ -8,7 +8,7 @@ Buscar post
 {% block contenidoPagina %}
 <!-- Header-->
 <main id="main">
-    <h2>Crear post</h2>
+    <h2>Buscar post</h2>
     <form action="" method="post">
       {% csrf_token %}
         <div class="mb-3">
@@ -19,6 +19,15 @@ Buscar post
 
         <button type="submit" class="btn btn-primary">Buscar</button>
       </form>
+
+    <p>Resultados: </p>
+        <ul>
+        {% for resultado in titulos %}
+            <li>{{resultado.titulo}} </li>
+        {% endfor %}
+        </ul>
+
+
       <br><br>
 </main>
 
