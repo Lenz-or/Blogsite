@@ -6,4 +6,4 @@ from django.http import HttpResponse
 
 def inicio(request):
 
-        return render(request,"ProyectoBlogApp/base.html",{})
+        return render(request,"ProyectoBlogApp/index.html",{})
